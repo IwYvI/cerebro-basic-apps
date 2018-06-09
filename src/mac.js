@@ -1,5 +1,6 @@
 import path from 'path'
 import getAbbr from './getAbbr'
+import getPinyin from './getPinyin'
 import { shell } from 'electron'
 import os from 'os'
 
@@ -23,7 +24,7 @@ export const EXTENSIONS = ['prefPane', 'app']
 
 export const openApp = (app) => shell.openItem(app.source)
 
-export const toString = (app) => `${app.name} ${app.filename} ${getAbbr(app.name)}`
+export const toString = (app) => `${app.name} ${app.filename} ${getAbbr(app.name)} ${getPinyin(app.name)}`
 
 export const formatPath = (filePath) => ({
   id: filePath,

@@ -33,6 +33,7 @@
   "dependencies": {
     "cerebro-tools": "^0.1.8",
     "cerebro-ui": "^0.0.16",
-    "du": "^0.1.0"
+    "du": "^0.1.0",
+    "pinyinlite": "^1.2.1"
   }
 }

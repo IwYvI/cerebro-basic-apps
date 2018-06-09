@@ -4,6 +4,7 @@ import fs from 'fs'
 import uniq from 'lodash/uniq'
 import flatten from 'lodash/flatten'
 import getAbbr from './getAbbr'
+import getPinyin from './getPinyin'
 import { shellCommand } from 'cerebro-tools'
 
 let appDirs = [
@@ -111,7 +112,7 @@ export const toString = ({ name, exec }) => {
       .pop()
       .split(' ')
       .shift()
-  return `${name} ${getAbbr(name)} ${binaryName}`
+  return `${name} ${getAbbr(name)} ${binaryName} ${getPinyin(name)}`
 }
 
 export const formatPath = (filePath) => {
