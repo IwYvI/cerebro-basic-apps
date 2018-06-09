@@ -27,11 +27,11 @@
     "applications"
   ],
   "devDependencies": {
-    "cerebro-scripts": "^0.0.11",
-    "rimraf": "^2.6.1"
+    "cerebro-scripts": "^0.0.25",
+    "rimraf": "^2.6.2"
   },
   "dependencies": {
-    "cerebro-tools": "^0.1.0",
+    "cerebro-tools": "^0.1.8",
     "cerebro-ui": "^0.0.16",
     "du": "^0.1.0"
   }
